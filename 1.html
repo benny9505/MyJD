@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header {
+            max-width:640px;
+            min-width:320px;
+            background-color: pink;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .a1 {
+            width: 44px;
+            height: 44px;
+            background-color: green;
+            float:left;
+        }
+        .a2 {
+            width: 44px;
+            height: 44px;
+            background-color: blue;
+            float:right;
+        }
+        .a3 {
+            /*width: 100%;*/
+            height: 44px;
+            /*background-color: black;*/
+            overflow:hidden;
+            /*color:#eee*/
+            line-height: 44px;
+        }
+        .a4 {
+            height: 30px;
+            color:#eee;
+            /*overflow: hidden;*/
+            width: 100%;
+            background-color: yellow;
+        }
+    /*    如果用BFC布局，不要设置宽，让其自己分配即可*/
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3">
+            <div class="a4">111</div>
+        </div>
+    </div>
+</body>
+</html>
